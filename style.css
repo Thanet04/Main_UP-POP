@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+font-family: 'Roboto', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+}
+.button{
+    display: inline-block;
+    flex-direction: column;
+}
+
+.home,.calendar,.follow{
+    display: inline-block;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.home:hover{
+    transform: scale(1.2);
+}
+
+.calendar:hover{
+    transform: scale(1.2);
+}
+
+.follow:hover{
+    transform: scale(1.2);
+}
+
+.nofication,.myprofile{
+    display: inline-block;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.main-right{
+    display: grid;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    margin-right: 30px;
+}
+
+.slider{
+    flex-direction: column;
+    margin: 0px 50px;
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: 1fr;
+}
+    
+.slibar{
+    display: flex;
+    width: calc(180px*6);
+    animation: slide 5s linear infinite;
+}
+    
+.slibar:hover{
+    animation-play-state: paused;
+    
+}
+
+.nofication:hover{
+    transform: scale(1.2);
+}
+
+.image:hover{
+    transform: scale(1.1);
+}
+
+.myprofile:hover{
+    transform: scale(1.2);
+}
+    
+.slide{
+    display: flex;
+    padding: 10px;
+    perspective: 100px;
+}
+    
+.image{
+    width: 100%;
+    transition: 2s;
+    box-shadow: 2px 2px 5px #FFFFFF;
+    cursor: pointer;
+}
+    
+@keyframes slide{
+from{
+    transform: translateX(0);
+}
+to{
+    transform: translateX(-200px);
+}
+}
+
+.activity{
+    margin: 0px 50px;
+    flex-direction: column;
+}
+
+.ma{
+    display: inline-block;
+    justify-content: space-between;
+    margin: 0px 30px;
+}
+
+.div{
+    display: flex;
+    justify-content: space-between
+}
+
+h2{
+    position: absolute;
+    top: 540px;
+    right: 420px;
+} 
+
+.text{
+    display: flex;
+}
+
+.m{
+    margin: 15px 80px;
+}
+
+.k{
+    margin: 15px 130px;
+}
+
+.s{
+    margin: 15px 85px;
+}
+
+.j{
+    margin: 15px 110px;
+}
+
+.ma:hover{
+    transform: scale(1.15);
+}
+
